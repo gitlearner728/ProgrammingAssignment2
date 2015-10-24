@@ -1,5 +1,11 @@
-## Caching Inverse of the matrix: Below two functions helps in increasing the performance by not running the inverse function for matrix with same values more than once.
-## makecachematrix function takes matrix as input and creates a list of 4 functions. First one is the set function i.e. used to modify the matrix data and get function is used to get the matrix value. Similarly getinverse function gets the inverse value and setinverse function updates inverse value to null if the set function is runs.
+## Caching Inverse of the matrix: Below two functions helps in increasing the performance by not running the
+## inverse function for matrix with same values more than once.
+##
+##
+## makecachematrix function takes matrix as input and creates a list of 4 functions.
+## First one is the set function i.e. used to modify the matrix data and get function will return the matrix value.
+## Similarly getinverse function returns the inverse value of the matrix and setinverse function updates
+## inverse value to null if the set function is runs.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
